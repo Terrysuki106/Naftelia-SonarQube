@@ -302,7 +302,7 @@ function bindInteractions() {
     const action = event.target.closest("[data-action]");
     if (action) {
       event.preventDefault();
-      await handleAction(action.dataset.action, action);
+      await handleAction(action.dataset.action);
     }
   });
 
